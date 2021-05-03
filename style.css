@@ -1,0 +1,272 @@
+
+body{
+    line-break: auto;
+    background: rgb(249,255,0);
+    background: linear-gradient(90deg, rgba(249,255,0,1) 11%, rgb(1, 255, 242) 50%, rgba(204,228,4,1) 94%);
+}
+   
+h1{
+    color: black;
+    background: repeating-linear-gradient(80deg, rgb(253, 133, 86),  orange 10px, rgb(247, 176, 188) );
+    text-align: center;
+    margin-top: -50px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    left: -1px;
+    
+  }
+ @keyframes button_anim{
+    0%{
+        color: blue;
+    }
+    50%{
+        color: aqua;
+    }
+    100%{
+        color: chartreuse;
+    }
+}
+@keyframes button_hover_anim{
+  100%{
+       width: 150px;
+       background-color: aqua;
+    }
+}
+#submit{
+   animation-name: button_anim;
+   animation-duration: 500ms;
+   animation-fill-mode: forwards;
+   cursor: progres;
+}
+#submit:hover {
+   animation-name: button_hover_anim;
+   animation-duration: 500ms;
+ }
+  .heart{
+    position: relative;
+   animation-iteration-count: infinite;
+    bottom: 1em;
+    width: 50px;
+    height: 50px;
+    right: -200px;
+    background-color:  pink;
+    transform: rotate(-45deg);
+    animation-name: heart_anim;
+    animation-duration: 1s;
+ }
+ @keyframes heart_anim{
+     0%{
+         
+         transform: rotate(-45deg);
+         
+     }
+     50%{
+       
+        transform: scale(1.5) rotate(-45deg);
+     }
+     100%{
+        
+        transform: rotate(-45deg);
+     }
+}
+.heart::after {
+     content: "";
+     background-color: pink;
+     width: 50px;
+     height: 50px;
+     position: absolute;
+     left: 30px;
+     border-radius: 50%;
+     
+ }
+ .heart::before{
+     content: "";
+     position: absolute;
+     background-color: pink;
+     border-radius: 50%;
+     width: 50px;
+     height: 50px;
+     top: -30px;
+     left: -1px;
+    
+    }
+  .first_div{
+      margin-top: 2.5em;
+  }
+a:hover{
+     color: gold;
+}
+a:visited{
+      color: rgb(131, 2, 131);
+      transform: skewX(20deg);
+}
+a:active{
+    color: blue;
+}
+a:link{
+    text-decoration: none;
+}
+p{
+    text-align: justify;
+}
+.socrate_image{
+   position: absolute;
+   float: left;
+   z-index: 1;
+   box-shadow: 10px 10px 5px 10px rgb(216, 208, 208);
+}
+.aristote_image{
+    z-index: 2;
+    float: left;
+    margin-top: 200px;
+    margin-left: 200px;
+    position: absolute;
+}
+.margins{
+    margin-left: 300px;
+}
+.aristote_margin-top{
+    margin-top: 90px;
+ }
+.aristote_text{
+   top: 210px;
+   margin-left: 10px;
+    position: relative;
+   margin-top: 2em;
+}
+.ou_encore_class{
+    margin-left: 250px;
+    }
+    #aristote{
+        transform: skewX(20deg);
+    }
+       img:hover{
+        transform: scale(1);
+       }
+     .new_class{
+        margin-left: -12em;
+         margin-top: 10em;
+         text-indent: 4em;
+     }
+     #animation{
+         animation-name: bgcolor;
+         animation-duration: 4s;
+         width: 50px;
+         height: 50px;
+         background-color: white;
+         display: inline-block;
+         animation-fill-mode: forwards;
+         position: relative;
+         border-radius: 50%;
+         position: relative;
+         animation-iteration-count: infinite;
+         animation-timing-function: cubic-bezier(1,0.75,0.50,0.25);
+
+     }
+     #the_animation{
+        animation-name: bgcolor;
+        animation-duration: 4s;
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        display: inline-block;
+        animation-fill-mode: forwards;
+        position: relative;
+        border-radius: 50%;
+        position: relative;
+        animation-iteration-count: infinite;
+        margin-left: 35px ;
+     }
+     @keyframes bgcolor{
+         0%{
+             left: 1px;
+             background-color: aqua;
+         }
+         25%{
+             background-color: rgb(60, 60, 184);
+         }
+         50%{
+             left: 500px;
+             background-color: rgb(212, 0, 255);
+         }
+         75%{
+             background-color: brown;
+         }
+         100%{
+             left: 1000px;
+             background-color: rgb(236, 131, 10);
+         }
+     }
+#ball3{
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    position: relative;
+    left: 250px;
+    animation-name: balls_anim;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-duration: 4s;
+}
+#ball4{
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    position: relative;
+    left: 500px;
+    animation-name: balls_anim;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+
+}
+.balls_anim{
+    animation-timing-function: cubic-bezier(0.25,0.50,0.75,1);
+}
+@keyframes balls_anim{
+    0%{
+       
+bottom: 0px;
+background-color: brown;
+    }
+    50%{
+        
+bottom: 300px;
+    }
+
+    100%{
+        
+        bottom: 0px;
+        background-color: brown;
+    }
+}
+#all_squares{
+display: flex;
+position: absolute;
+}
+#first{
+background-color: aliceblue;
+position: absolute;
+}
+#second{
+    background-color: black;
+    position: absolute;
+}
+#third{
+    background-color: thistl;
+    position: absolute;
+}
+.square{
+    width: 12.5%;
+height: 12.5%;
+content: "";
+position: absolute;
+}
