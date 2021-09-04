@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <a href="#actual">go to</a>
     <div class="container-fluid" style="background-color: aqua;">
         <h1>Bootstraping</h1>
         <p>My first bootstrap paragraph.</p>
@@ -117,6 +118,20 @@
         }
         xer()
     </script>
+<div class="actual" id="actual">
+<p class="gaou text-default">Gaou</p>
+</div>
+<script>
+    document.querySelectorAll('.gaou')[0].innerHTML="Testing";
+    let be = document.querySelector('.gaou');
+    be.style ='background-color: cyan;';
+   let being =  document.createElement('p');
+   let text = document.createTextNode('NodeJs');
+   being.appendChild(text)
+    be.innerHTML = being.innerHTML;
+    let was = be
+    
+    document.querySelectorAll('.actual')[0].insertBefore(being, be)
+</script>
 </body>
-
 </html>
