@@ -65,7 +65,8 @@
         <button type="button" class="btn btn-default "> Defaut</button>
         <button type="button" class="btn btn-primary btn-xs active red-tooltip" title="Je suis le petit boutton"
             data-bs-toggle="tooltip" id="tool"> Primary</button>
-        <button type="button" class="btn btn-success  btn-lg" data-bs-toggle="modal" data-bs-target="#myModal"> Success</button>
+        <button type="button" class="btn btn-success  btn-lg" data-bs-toggle="modal" data-bs-target="#myModal">
+            Success</button>
         <div class="modal fade" id="myModal">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -118,20 +119,28 @@
         }
         xer()
     </script>
-<div class="actual" id="actual">
-<p class="gaou text-default">Gaou</p>
-</div>
+    <div class="actual" id="actual">
+        <p class="gaou text-default">Gaou</p>
+        <p class="gas" id="gas">Gas</p>
+        <div class="actualChild" id="actualChild">
+            <p class="textes text-secondary"></p>
+            <p class="textes text-danger"></p>
+        </div>
+    </div>
+    <script>
+        let be = document.createElement("h2");
+       be.className = "text-primary";
+       be.innerHTML = "Texte-Primaire";
+       let gaou = document.getElementsByClassName("gaou")[0]
+    let div = document.getElementById("actual")
+    div.replaceChild(be, gaou)
+</script>
 <script>
-    document.querySelectorAll('.gaou')[0].innerHTML="Testing";
-    let be = document.querySelector('.gaou');
-    be.style ='background-color: cyan;';
-   let being =  document.createElement('p');
-   let text = document.createTextNode('NodeJs');
-   being.appendChild(text)
-    be.innerHTML = being.innerHTML;
-    let was = be
-    
-    document.querySelectorAll('.actual')[0].insertBefore(being, be)
+    let gas = document.getElementById("gas")
+    let actual = gas.parentNode;
+    actual.style.color ="violet"
+    console.log(actual.childNodes[3][0].nodeValue);
 </script>
 </body>
+
 </html>
