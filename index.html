@@ -1,51 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>My love</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: aqua;
+        }
+        p{
+            font-size: 140%;
+            text-align: center;
+        }
+        .circle{
+            border-radius: 50%;
+            width:  75px !important;
+            height: 75px !important;
+            z-index: 1;
+        }
+        #circle1{
+            position: relative;
+            left: 30px;
+        }
+        #circle2{
+            position: relative;
+            right: 30px;
+        }
+        .all{
+            background-color: pink;
+            align-self: center;
+        }
+        .side{
+            display: flex;
+        }
+        #heart{
+            width: 40px;
+            margin: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .all{
+            animation-name: beat;
+            animation-duration: 1s;
+            animation-timing-function: cubic-bezier(0, 0, 0, 0);
+            animation-iteration-count: infinite;
+        }
+        #m{
+            position: relative;
+            top: 20px;
+        }
+        @keyframes beat {
+            0%{
+                transform: scale(1,1);
+            }
+            25%{
+                transform: scale(1.5,1.5);
+            }
+            50%{
+                transform: scale(1,1);
+            }
+            75%{
+                transform: scale(1.5,1.5);
+            }
+            100%{
+                transform: scale(1,1);
+            }
+        }
+        .rect{
+            z-index: 2;
+            width:  75px !important;
+            height: 75px !important;
+        }
+         #left{
+             position: relative;
+             left: 48px;
+             transform: rotate(45deg);
+         }
+        #right{
+            position: relative;
+            right: 48px;
+            transform: rotate(-45deg);
+        }
+        .text1{
+            transform: rotate(-45deg);
+            position: relative;
+            left: -15px;
+        }
+        .text2{
+            transform: rotate(45deg);
+            position: relative;
+            left: 15px;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background: linear-gradient(90deg, rgba(249,255,0,1) 11%, rgb(1, 255, 242) 50%, rgba(204,228,4,1) 94%);">
-        <div class="container-fluid">
-          <div class="navbar-brand " href="#" >Bienvenue aux archives</div>
-          <button class="navbar-toggler pagination justify-content-end bi" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation" style="position: absolute; right: 2px; top: 2px;">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="">
-          <div class="collapse navbar-collapse row" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class=" nav-a nav-link active" aria-current="page" href="folder.html">Accueil</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class=" nav-a nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Archives
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class=" nav-a dropdown-item" href="HOME/home.html">Maison</a></li>
-                  <li><a class=" nav-a dropdown-item" href="SCHOOL/school.html">Ecole</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class=" nav-a dropdown-item" href="WORKS/works.html">Cours</a></li>
-                </ul>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Rechercher</button>
-            </form>
-          </div>
-        </div>
-        </div>
-      </nav>
-    </header>
+    <p>Tant de choses à dire et si peu de temps…</p>
+    <p>Je suis gagné ce soir par un stress des plus oppressants car demain, je composerai l'examen du BEPC. Je ne devrais penser qu'à étudier et pourtant, je ne fais que penser à toi. </p>
+    <p> Bonsoir,<i> Houri </i>. Le jeudi, je t'ai menti en prétendant ne pas t'aimer. La vérité même si elle est dure à avouer, c'est que je t'aime passionnément. Je t'aime car tu es belle, intelligente et splendide. Tu as de beaux yeux qui ne laissent personne indifférent et un sourire magnifique. Tu as tant d'autres qualités que si je devais toutes les écrire, je ne finirais pas de coder ce soir. Il est si agréable de converser avec toi que j'en perds la notion du temps.</p>
+    <p>Here and now, I want to tell you what I  feel <br>
+        Obscurity that was in my heart left place to the light of your smile<br>
+        Unforgettable are your beautiful  eyes<br>
+        Rare is a beauty like yours<br>
+        I love you Houri , I love you so much because<br>
+        You are a special girl, because<br>
+        You are exceptionnal<br>
+        And  because you are just a marvel<br>
+        </p>
     
+         <div id="heart">
+             <div id="left" class="side"><div class="all circle" id="circle1" ><p class="text1">A</p></div>
+             <div class="all rect" id="rect1"></div></div>
+             <div id="right" class="side">
+             <div class="all rect" id="rect2"></div><div class="all circle" id="circle2" ><p class="text2">H</p></div></div>
+         </div>
+         <p id="m">Me and you forever and nerver</p>
 </body>
 </html>
